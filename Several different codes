@@ -1,0 +1,32 @@
+def find_max(lst,target):
+    if not lst:
+        return False
+    if lst[0]==target:
+        return True
+    else:
+        return find_max(lst[1:],target)
+
+print(find_max([1,3,3,67,8,9],999))
+
+
+print()
+
+
+def reverse_list(a):
+    if len(a) == 0:
+        return []
+    else:
+        return reverse_list(a[1:]) + [a[0]]
+
+print(reverse_list([345,7654,64,3546,575]))
+
+print()
+
+def vowels(s):
+    if not s:
+        return 0
+    else:
+        (s[0] in 'aeiou') + vowels(s[1:])
+
+print(vowels(["Hello world"]))
+
