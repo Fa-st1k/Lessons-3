@@ -1,0 +1,11 @@
+def power(num, step):
+    if (step == 1):
+        return (num)
+    elif (step == 0):
+        return 0
+    else:
+        return num ** step
+num = int(input("Введите число: "))
+step = int(input("Введите его степень: "))
+print("Результат возведения в степень равен:", power(num, step))
+
